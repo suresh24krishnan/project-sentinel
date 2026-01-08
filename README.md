@@ -20,11 +20,11 @@ Sentinel implements a "Zero-Trust" model for AI agents. Every response is peer-r
 graph TD
     A[User Request] --> B[Primary Agent]
     B --> C{Logic Auditor}
-    C -- 🟢 SAFE --> D[Generate ROI Report]
-    C -- 🔴 UNSAFE --> E[Jira Incident Handler]
+    C -- SAFE --> D[Generate ROI Report]
+    C -- UNSAFE --> E[Jira Incident Handler]
     E --> F[Inject Corrective Instructions]
     F --> B
-    D --> G[🏁 End Session]
+    D --> G[End Session]
     
     style C fill:#f96,stroke:#333,stroke-width:2px
     style E fill:#ff9999,stroke:#333,stroke-width:2px
