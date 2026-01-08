@@ -25,7 +25,7 @@ graph TD
     E --> F[Inject Corrective Instructions]
     F --> B
     D --> G[End Session]
-    
+
     style C fill:#f96,stroke:#333,stroke-width:2px
     style E fill:#ff9999,stroke:#333,stroke-width:2px
     style D fill:#99ff99,stroke:#333,stroke-width:2px
