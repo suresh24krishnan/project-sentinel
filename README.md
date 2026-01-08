@@ -106,17 +106,3 @@ This project demonstrates **Guardrail Engineering**. By decoupling execution fro
 **Developed by [Suresh Krishnan**](https://www.google.com/search?q=https://github.com/suresh24krishnan)
 
 ```
-
----
-
-### **One Final Sync**
-After saving the file, run these to finish:
-
-```powershell
-git add README.md
-git commit -m "docs: clean up README links and structure"
-git push origin master
-
-```
-
-**Everything is now 100% aligned with your code. Would you like me to help you draft that LinkedIn post now so you can share this awesome 80,000x ROI story?**
