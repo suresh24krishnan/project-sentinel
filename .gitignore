@@ -1,0 +1,29 @@
+# --- Security ---
+.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+
+# --- IDEs & OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
