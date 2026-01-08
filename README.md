@@ -35,9 +35,9 @@ style D fill:#99ff99,stroke:#333,stroke-width:2px
 ## ✨ Key Features
 
 * **Logic Auditor Node:** A high-reasoning "Judge" agent that compares commands against an authorized asset registry.
-* **Closed-Loop Remediation:** Automatically logs "Technical Compliance Failures" to Jira and uses ticket metadata to re-program the agent behavior.
-* **Cost Observability:** Tracks exact API token spend per "repair loop" to provide a granular Cost-of-Resolution.
-* **SRE Circuit Breaker:** Implements recursion limits to prevent infinite loops and runaway API costs.
+* **Closed-Loop Remediation:** Automatically logs incidents to Jira and uses ticket metadata to re-program agent behavior.
+* **Cost Observability:** Tracks exact API token spend per "repair loop" to provide granular Cost-of-Resolution data.
+* **SRE Circuit Breaker:** Implements recursion limits to prevent infinite loops and runaway costs.
 
 ## 📈 Real-World ROI (Sample Performance)
 
@@ -62,8 +62,8 @@ cd project-sentinel
 
 ```
 
-2. **Configure Environment Variables:**
-Create a `.env` file in the root directory:
+2. **Configure Environment:**
+Create a `.env` file in the root:
 
 ```env
 OPENAI_API_KEY=your_openai_key
@@ -74,7 +74,7 @@ JIRA_PROJECT_KEY=SEN
 
 ```
 
-3. **Install & Run:**
+3. **Run:**
 
 ```bash
 pip install -r requirements.txt
@@ -84,15 +84,15 @@ python main.py
 
 ## 📂 Project Structure
 
-* `main.py`: The entry point for the stress test and cost tracking.
-* `app/graph.py`: The LangGraph state machine definition, routing logic, and state definitions.
-* `app/nodes.py`: Core logic for the Primary Agent, Auditor, Jira Handler, and ROI Reporter.
+* `main.py`: Entry point for stress testing and cost tracking.
+* `app/graph.py`: LangGraph state machine and state definitions.
+* `app/nodes.py`: Core logic for Agent, Auditor, and Jira Handler.
 
 ---
 
 ## 🛡️ Governance & Security
 
-This project demonstrates **Guardrail Engineering**. By decoupling execution from auditing, we ensure that LLMs adhere to organization-specific compliance rules, preventing "helpful" but dangerous hallucinations in DevOps environments.
+This project demonstrates **Guardrail Engineering**. By decoupling execution from auditing, we ensure LLMs adhere to organization-specific compliance rules.
 
 **Developed by [Suresh Krishnan**](https://www.google.com/search?q=https://github.com/suresh24krishnan)
 
@@ -100,12 +100,15 @@ This project demonstrates **Guardrail Engineering**. By decoupling execution fro
 
 ---
 
-### **Final Deployment Commands**
-Run these in your terminal. This will overwrite the history with this perfectly formatted version.
-
+### **How to Push This Successfully**
+1.  Open `README.md` in your editor.
+2.  **Select All** (Ctrl+A) and **Delete**.
+3.  **Paste** the block above. **Ensure your editor doesn't auto-indent the Mermaid section when you paste it.**
+4.  Run:
 ```powershell
 git add README.md
-git commit -m "docs: final absolute fix for mermaid and badge formatting"
+git commit -m "docs: finalize repo with zero-indentation mermaid and fixed badges"
 git push origin master
 
 ```
+
