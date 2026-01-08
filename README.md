@@ -8,7 +8,7 @@
 [![LangGraph](https://img.shields.io/badge/Framework-LangGraph-orange.svg)](https://langchain-ai.github.io/langgraph/)
 [![Atlassian](https://img.shields.io/badge/ITSM-Jira-blue.svg)](https://www.atlassian.com/software/jira)
 
-**Sentinel** is an automated SRE governance engine designed to intercept AI hallucinations before they impact production infrastructure. It utilizes a multi-agent **Judge-Worker** architecture to validate technical commands against an authorized inventory and performs closed-loop remediation via **Jira Service Management**.
+**Sentinel** is an automated SRE governance engine designed to intercept AI hallucinations before they impact production infrastructure.
 
 ---
 
@@ -18,17 +18,17 @@ Sentinel implements a "Zero-Trust" model for AI agents. Every response is peer-r
 
 ```mermaid
 graph TD
-    A[User Request] --> B[Primary Agent]
-    B --> C{Logic Auditor}
-    C -->|SAFE| D[Generate ROI Report]
-    C -->|UNSAFE| E[Jira Incident Handler]
-    E --> F[Inject Corrective Instructions]
-    F --> B
-    D --> G[End Session]
+A[User Request] --> B[Primary Agent]
+B --> C{Logic Auditor}
+C -->|SAFE| D[Generate ROI Report]
+C -->|UNSAFE| E[Jira Incident Handler]
+E --> F[Inject Corrective Instructions]
+F --> B
+D --> G[End Session]
 
-    style C fill:#f96,stroke:#333,stroke-width:2px
-    style E fill:#ff9999,stroke:#333,stroke-width:2px
-    style D fill:#99ff99,stroke:#333,stroke-width:2px
+style C fill:#f96,stroke:#333,stroke-width:2px
+style E fill:#ff9999,stroke:#333,stroke-width:2px
+style D fill:#99ff99,stroke:#333,stroke-width:2px
 
 ```
 
