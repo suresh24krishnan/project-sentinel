@@ -2,6 +2,9 @@
 ```markdown
 # 🚀 Project Sentinel: Self-Healing AIOps Gateway
 
+![Project Sentinel Overview](./project-sentinal_image.png)
+![System Performance](./project-sentinal_image2.png)
+
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![LangGraph](https://img.shields.io/badge/Framework-LangGraph-orange.svg)](https://langchain-ai.github.io/langgraph/)
 [![Atlassian](https://img.shields.io/badge/ITSM-Jira-blue.svg)](https://www.atlassian.com/software/jira)
@@ -98,8 +101,3 @@ This project demonstrates **Guardrail Engineering**. By decoupling execution fro
 
 ```
 
----
-project-sentinal_image2.png
-project-sentinal_image.png
-
-```
