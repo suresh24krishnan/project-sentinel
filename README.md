@@ -1,4 +1,5 @@
 
+
 ```markdown
 # 🚀 Project Sentinel: Self-Healing AIOps Gateway
 
@@ -35,26 +36,22 @@ style D fill:#99ff99,stroke:#333,stroke-width:2px
 ## ✨ Key Features
 
 * **Logic Auditor Node:** A high-reasoning "Judge" agent that compares commands against an authorized asset registry.
-* **Closed-Loop Remediation:** Automatically logs "Technical Compliance Failures" to Jira (e.g., Ticket `SEN-15`) and uses ticket metadata to re-program the agent's behavior in real-time.
-* **Cost Observability:** Tracks exact API token spend per "repair loop" to provide a granular Cost-of-Resolution.
-* **SRE Circuit Breaker:** Implements recursion limits to prevent infinite loops and runaway API costs.
+* **Closed-Loop Remediation:** Automatically logs "Technical Compliance Failures" to Jira and uses ticket metadata to re-program the agent.
+* **Cost Observability:** Tracks exact API token spend per "repair loop."
 
-## 📈 Real-World ROI (Sample Performance)
-
-In stress tests involving unauthorized commands for decommissioned servers (e.g., `X-7-Alpha`), Sentinel achieved:
+## 📈 Real-World ROI
 
 | Metric | Result |
 | --- | --- |
-| **Manual Triage Cost (Est.)** | $14.17 (10m @ $85/hr) |
+| **Manual Triage Cost (Est.)** | $14.17 |
 | **Sentinel AI Cost** | $0.00018 |
-| **Cost Efficiency** | **~80,000x More Cost-Effective** |
-| **Incident Resolution Time** | < 5 Seconds |
+| **Cost Efficiency** | **~80,000x Better** |
 
 ---
 
 ## 🛠️ Setup & Installation
 
-1. **Clone the repository:**
+1. **Clone & Setup:**
 
 ```bash
 git clone [https://github.com/suresh24krishnan/project-sentinel.git](https://github.com/suresh24krishnan/project-sentinel.git)
@@ -62,37 +59,13 @@ cd project-sentinel
 
 ```
 
-2. **Configure Environment Variables:**
-Create a `.env` file in the root directory:
-
-```env
-OPENAI_API_KEY=your_openai_key
-JIRA_URL=[https://your-domain.atlassian.net](https://your-domain.atlassian.net)
-JIRA_EMAIL=your-email@example.com
-JIRA_API_TOKEN=your_jira_token
-JIRA_PROJECT_KEY=SEN
-
-```
-
-3. **Install & Run:**
+2. **Run:**
 
 ```bash
 pip install -r requirements.txt
 python main.py
 
 ```
-
-## 📂 Project Structure
-
-* `main.py`: The entry point for the stress test and cost tracking.
-* `app/graph.py`: The LangGraph state machine definition, routing logic, and State definitions.
-* `app/nodes.py`: Core logic for the Primary Agent, Auditor, Jira Handler, and ROI Reporter.
-
----
-
-## 🛡️ Governance & Security
-
-This project demonstrates **Guardrail Engineering**. By decoupling execution from auditing, we ensure that LLMs adhere to organization-specific compliance rules, preventing "helpful" but dangerous hallucinations in DevOps environments.
 
 **Developed by [Suresh Krishnan**](https://www.google.com/search?q=https://github.com/suresh24krishnan)
 
